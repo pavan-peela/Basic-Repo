@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zero Cool</title>
+	<link rel="shortcut icon" href="#">
+	<link rel="stylesheet" type="text/css" href="../static/peela_style.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <script src="js/main_script.js"></script> -->
+	<!-- <link src="{{ url_for('static', filename='peela_style.css')}}"> -->
+    <!-- <script src="//d3js.org/d3.v3.min.js"></script> -->
+    <script src = "{{ url_for('static', filename='main_script.js')}}"></script>
+</head>
+<body>
+	<section>
+		<h1>Zero Cool - CSE 509 Project</h1>
+	</section>
+
+	<div class="first_input">
+		<select id="first_drop" name="first_drop">
+			<option value=""> Select a Task</option>
+			<option value="ip_alive">IP Address Alive Check</option>
+			<option value="ip_subnet">Alive IP's in a Subnet</option>
+			<option value="port_scan">Port Scan</option>
+		</select>
+	</div>
+
+	<div class="container">
+		<!-- 1 tree -->
+		<div class="ip_alive">
+			<input id="ip_input" type="text" name="IP_Range" value="Enter IP">
+			<!-- <button type="button" id="submit">Submit</button> -->
+			<button data-hover="Send Query ->" type="button" id="submit" class="ipb"><div>Get Results!</div></button>
+		</div>
+
+		<!-- 2 tree -->
+		<div class="ip_subnet">
+				<input type="text" id="ip_input" name="IP_Range" value="Enter IP Subnet Range">
+		</div>
+
+		<!-- 3 tree -->
+		<div class="port_scan">
+			<select id="scanning_type" name="scanning_type">
+				<option value="">Select Scan Type</option>
+				<option value="1">Normal Port Scanning</option>
+				<option value="2">TCP SYN Scanning</option>
+				<option value="3">TCP FIN Scanning</option>
+			</select>
+			<input type="text" id="ip_input" class="one" name="IP_Range" value="Enter IP Subnet Range">
+			<input type="text" id="port_input" class="two" name="Port_Range" value="Enter Desired Port Range">
+		</div>
+	</div>
+</body>
+</html>
