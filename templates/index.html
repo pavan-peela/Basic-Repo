@@ -16,38 +16,42 @@
 		<h1>Zero Cool - CSE 509 Project</h1>
 	</section>
 
-	<div class="first_input">
-		<select id="first_drop" name="first_drop">
-			<option value=""> Select a Task</option>
-			<option value="ip_alive">IP Address Alive Check</option>
-			<option value="ip_subnet">Alive IP's in a Subnet</option>
-			<option value="port_scan">Port Scan</option>
-		</select>
-	</div>
-
-	<div class="container">
-		<!-- 1 tree -->
-		<div class="ip_alive">
-			<input id="ip_input" type="text" name="IP_Range" value="Enter IP">
-			<!-- <button type="button" id="submit">Submit</button> -->
-			<button data-hover="Send Query ->" type="button" id="submit" class="ipb"><div>Get Results!</div></button>
-		</div>
-
-		<!-- 2 tree -->
-		<div class="ip_subnet">
-				<input type="text" id="ip_input" name="IP_Range" value="Enter IP Subnet Range">
-		</div>
-
-		<!-- 3 tree -->
-		<div class="port_scan">
-			<select id="scanning_type" name="scanning_type">
-				<option value="">Select Scan Type</option>
-				<option value="1">Normal Port Scanning</option>
-				<option value="2">TCP SYN Scanning</option>
-				<option value="3">TCP FIN Scanning</option>
+	<div class="outer">
+		<div class="first_input">
+			<select id="first_drop" name="first_drop">
+				<option value=""> Select a Task</option>
+				<option value="ip_alive">IP Address Alive Check</option>
+				<option value="ip_subnet">Alive IP's in a Subnet</option>
+				<option value="port_scan">Port Scan</option>
 			</select>
-			<input type="text" id="ip_input" class="one" name="IP_Range" value="Enter IP Subnet Range">
-			<input type="text" id="port_input" class="two" name="Port_Range" value="Enter Desired Port Range">
+		</div>
+
+		<div class="container">
+			<!-- 1 tree -->
+			<div class="ip_alive">
+				<input id="ip_input" type="text" name="IP_Range" value="Enter IP">
+				<!-- <button type="button" id="submit">Submit</button> -->
+				<button data-hover="Send Query ->" type="button" id="submit" class="ipb"><div>Get Results!</div></button>
+			</div>
+
+			<!-- 2 tree -->
+			<div class="ip_subnet">
+					<input type="text" id="ip_input" name="IP_Range" value="Enter IP Subnet Range">
+					<button data-hover="Send Query ->" type="button" id="submit" class="ipb"><div>Get Results!</div></button>
+			</div>
+
+			<!-- 3 tree -->
+			<div class="port_scan">
+				<select id="scanning_type" name="scanning_type">
+					<option value="">Select Scan Type</option>
+					<option value="1">Normal Port Scanning</option>
+					<option value="2">TCP SYN Scanning</option>
+					<option value="3">TCP FIN Scanning</option>
+				</select>
+				<input type="text" id="ip_input" class="one" name="IP_Range" value="Enter IP Subnet Range">
+				<input type="text" id="port_input" class="two" name="Port_Range" value="Enter Desired Port Range">
+				<button data-hover="Send Query ->" type="button" id="submit" class="ipb_three"><div>Get Results!</div></button>
+			</div>
 		</div>
 	</div>
 </body>
